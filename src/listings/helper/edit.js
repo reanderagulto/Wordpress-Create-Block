@@ -39,6 +39,8 @@ import {
  */
 import '../assets/editor.scss';
 
+import ServerSideRender from '@wordpress/server-side-render';
+
 /**
  * The edit function describes the structure of your block in the context of the
  * editor. This represents what the editor will render when the block is used.
@@ -125,6 +127,14 @@ export default function Edit( props ) {
                     </fieldset>
                 </PanelBody>
             </InspectorControls>
+
+            <div class="aios-block-preview">
+                <ServerSideRender 
+                    block="create-block/aios-listing-block"
+                    attributes={ props.attributes }
+                />
+            </div>
+
         </div>
 	);
 }

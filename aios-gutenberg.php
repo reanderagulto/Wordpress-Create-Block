@@ -21,16 +21,18 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_aios_gutenberg_block_init() {
-	register_block_type( __DIR__ . '/build/communities' );
+	/*
+	* Register AIOS Communities Block
+	*/
 	register_block_type( 
-		__DIR__ . '/build/listings',
-		array(
-			'attributes'	=> array(
-				'selected_theme' 	=> array('type' => 'string',  'default' => 'default'),
-				'selected_view' 	=> array('type' => 'string',  'default' => 'grid'),
-				'posts_per_page'  	=> array('type' => 'number',  'default' => 4),
-				'featured_only'		=> array('type' => 'boolean', 'default' => false)
-			),
+		__DIR__ . '/build/communities' 
+	);
+
+	/*
+	* Register AIOS Listing Block
+	*/
+	register_block_type( 
+		__DIR__ . '/build/listings', array(
 			'render_callback' 	=> 'render_listing_block'
 		)
 	);
@@ -50,6 +52,16 @@ function render_listing_block( $attributes, $content, $block_instance ){
 	 * Keeping the markup to be returned in a separate file is sometimes better, especially if there is very complicated markup.
 	 * All of passed parameters are still accessible in the file.
 	 */
-	print_r($attributes)
+	if ( isset($attributes['selected_theme']) ) {
+		switch($attributes['selected_theme']){
+			case 'classic':
+				require plugin_dir_path( __FILE__ ) . 'src/listings/templates/classic/index.php';
+				break;
+			case 'default':
+				require plugin_dir_path( __FILE__ ) . 'src/listings/templates/default/index.php';
+				break;
+			default:
+		}
+	}
 	return ob_get_clean();
 }

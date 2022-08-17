@@ -15,10 +15,22 @@ import { registerBlockType } from '@wordpress/blocks';
 import './assets/style.scss';
 
 /**
+ * Import Theme Stylesheets
+ */
+
+// Classic Theme
+import './templates/classic/assets/sass/main.scss';
+
+// Default Theme
+import './templates/default/assets/sass/main.scss';
+
+/**
  * Internal dependencies
  */
 import Edit from './helper/edit';
 import metadata from './block.json';
+
+
 
 /**
  * Every block starts by registering a new block type definition.
@@ -30,10 +42,5 @@ registerBlockType( metadata.name, {
 	 * @see .helper/edit.js
 	 */
 	edit: Edit,
-	/**
-	 * Returns null to render in PHP
-	 */
-	save: () => {
-		return null;
-	}
+
 } );
