@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/aios-listing-block",
+  "version": "0.1.0",
+  "title": "AIOS Listing Block",
+  "category": "widgets",
+  "icon": "admin-home",
+  "description": "Gutenberg block for AIOS Listings V3",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "selected_theme": {
+      "type": "string",
+      "default": "default"
+    },
+    "selected_view": {
+      "type": "string",
+      "default": "grid"
+    },
+    "posts_per_page": {
+      "type": "number",
+      "default": 4
+    },
+    "featured_only": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "aios-listing-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

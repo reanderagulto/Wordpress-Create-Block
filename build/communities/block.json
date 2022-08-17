@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/aios-communities-block",
+  "version": "0.1.0",
+  "title": "AIOS Communities Block",
+  "category": "widgets",
+  "icon": "admin-multisite",
+  "description": "Gutenberg block for AIOS Communities",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "aios-communities-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
