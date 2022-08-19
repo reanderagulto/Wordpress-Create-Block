@@ -30,8 +30,6 @@ import './templates/default/assets/sass/main.scss';
 import Edit from './helper/edit';
 import metadata from './block.json';
 
-
-
 /**
  * Every block starts by registering a new block type definition.
  *

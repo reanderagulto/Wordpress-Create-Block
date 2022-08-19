@@ -4,7 +4,6 @@
   use AIOS\Listings\Classses\Constant;
   use AIOS\Listings\Classses\aios_listing_color_scheme;
 
-  echo '<h3>Default Theme</h3>';
   $featured_only = isset($attributes['featured_only']) && ! empty($attributes['featured_only']) ? $attributes['featured_only'] : 0;
   $posts_per_page = isset($attributes['posts_per_page']) && ! empty($attributes['posts_per_page']) ? $attributes['posts_per_page'] : 4;
 
@@ -30,6 +29,31 @@
   // Get queries of listing
   $listingData = aios_template_api::query($posts_per_page, 1, $queryArgs);
   $listingData = json_decode($listingData);
-  
-  print_r($listingData);
-?>
+  $color_scheme = new aios_listing_color_scheme('listings_results_page');
+  $currArr = Constant::currency();
+
+  ?>
+
+<div id="listings-results" class="listings-wrap">
+  <div class="listings-inner">
+    <div class="listings-main">
+      <!-- Render Listing View -->
+      <div id="render-listing-views" class="aios-listing-list-wrap">
+        <?php 
+            if($attributes['selected_view'] == 'list'){
+                require_once plugin_dir_path( __FILE__ ) . 'listing-view/list.view.php';
+            }else if($attributes['selected_view'] == 'table'){
+                require_once plugin_dir_path( __FILE__ ) . 'listing-view/table.view.php';
+            }else{
+                require_once plugin_dir_path( __FILE__ ) . 'listing-view/grid.view.php';
+            }
+        ?>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  AOS.init();
+</script>

@@ -1,3 +1,5 @@
+import React, { useEffect } from "react";
+import AOS from 'aos';
 /**
  * Retrieves the translation of text.
  *
@@ -50,11 +52,19 @@ import ServerSideRender from '@wordpress/server-side-render';
  * @return {WPElement} Element to render.
  */
 export default function Edit( props ) {
+
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
 	const { className, attributes, setAttributes } = props;
     const blockProps = useBlockProps();
 
     function updateSelectedTheme( val ) {
         props.setAttributes( { selected_theme: val } );
+    }
+    function updateSelectedView( val ) {
+        props.setAttributes( { selected_view: val } );
     }
     function updateNoPost( val ) {
         props.setAttributes( { posts_per_page: val } );
@@ -93,6 +103,27 @@ export default function Edit( props ) {
                     </fieldset>
                     <fieldset className="aios-form-group">
                         <div class="aios-block-col">
+                            <legend for="selectedView">
+                                { __( 'Select View:', 'aios-listings' ) }
+                            </legend>
+                        </div>
+                        <div class="aios-block-col">
+                            <SelectControl
+                                className="aios-form-control"
+                                name="selectedView"
+                                id="selectedView"
+                                value={ attributes.selected_view }
+                                options={ [
+                                    { label: 'Grid', value: 'grid' },
+                                    { label: 'List', value: 'list' },
+                                    { label: 'Table', value: 'table' },
+                                ] }
+                                onChange={ ( val ) => updateSelectedView(val) }
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset className="aios-form-group">
+                        <div class="aios-block-col">
                             <legend for="numberOfPost">
                                 { __( 'Number of Post:', 'aios-listings' ) }
                             </legend>
@@ -111,7 +142,7 @@ export default function Edit( props ) {
                     </fieldset>
                     <fieldset className="aios-form-group aios-checkbox">
                         <div class="aios-block-col">
-                            <legend for="numberOfPost">
+                            <legend for="featuredOnly">
                                 { __( 'Featured Only?', 'aios-listings' ) }
                             </legend>
                         </div>
