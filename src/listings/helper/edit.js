@@ -40,6 +40,11 @@ import {
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import '../assets/editor.scss';
+// Classic Theme
+import '../templates/classic/assets/sass/main.scss';
+
+// Default Theme
+import '../templates/default/assets/sass/main.scss';
 
 import ServerSideRender from '@wordpress/server-side-render';
 
