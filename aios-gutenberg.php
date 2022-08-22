@@ -25,7 +25,9 @@ function create_block_aios_gutenberg_block_init() {
 	* Register AIOS Communities Block
 	*/
 	register_block_type( 
-		__DIR__ . '/build/communities' 
+		__DIR__ . '/build/communities', array(
+			'render_callback' 	=> 'render_communities_block'
+		) 
 	);
 
 	/*
@@ -63,5 +65,18 @@ function render_listing_block( $attributes, $content, $block_instance ){
 			default:
 		}
 	}
+	return ob_get_clean();
+}
+
+/**
+ * This function is called when the block is being rendered on the front end of the site
+ *
+ * @param array    $attributes     The array of attributes for this block.
+ * @param string   $content        Rendered block output. ie. <InnerBlocks.Content />.
+ * @param WP_Block $block_instance The instance of the WP_Block class that represents the block being rendered.
+ */
+function render_communities_block( $attributes, $content, $block_instance ){
+	ob_start();
+	print_r($attributes);
 	return ob_get_clean();
 }

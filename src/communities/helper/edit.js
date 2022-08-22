@@ -31,11 +31,6 @@ import '../assets/editor.scss';
  */
 export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Aios Gutenberg – hello from the editor!',
-				'aios-gutenberg'
-			) }
-		</p>
+		
 	);
 }
