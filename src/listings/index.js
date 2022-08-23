@@ -15,16 +15,6 @@ import { registerBlockType } from '@wordpress/blocks';
 import './assets/style.scss';
 
 /**
- * Import Theme Stylesheets
- */
-
-// Classic Theme
-import './templates/classic/assets/sass/main.scss';
-
-// Default Theme
-import './templates/default/assets/sass/main.scss';
-
-/**
  * Internal dependencies
  */
 import Edit from './helper/edit';

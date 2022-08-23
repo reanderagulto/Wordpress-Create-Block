@@ -31,6 +31,6 @@ import '../assets/editor.scss';
  */
 export default function Edit() {
 	return (
-		
+		<></>
 	);
 }

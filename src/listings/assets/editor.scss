@@ -76,7 +76,6 @@
 		  &:checked{
 			border: solid 1px #007cba;
   
-  
 			&::before{
 			  content: '';
 			  display: inline-block;
@@ -97,10 +96,6 @@
 	top: 2px !important;
   }
   
-  .aios-block-preview{
-	padding: 30px 0px;
-  }
-  
   .text-center{
 	text-align: center;
   }
@@ -116,3 +111,23 @@
 	padding: 15px;
 	border: 1px solid #555;
   }
+
+
+  @import '../templates/classic/assets/sass/main.scss';
+  @import '../templates/default/assets/sass/main.scss';
+
+  /**
+ * Classic Theme for Editor: 
+ *
+ */
+
+ /** Grid **/
+ .ai-classic-properties-content-grid-price:before{
+	bottom: -75px;
+ }
+ .ai-classic-properties-listings[data-view=grid] .ai-classic-properties-content-grid{
+	display: block;
+ }
+ .ai-classic-properties-content-grid-address div{
+    justify-content: flex-start;
+ }

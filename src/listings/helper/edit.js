@@ -40,11 +40,6 @@ import {
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 import '../assets/editor.scss';
-// Classic Theme
-import '../templates/classic/assets/sass/main.scss';
-
-// Default Theme
-import '../templates/default/assets/sass/main.scss';
 
 import ServerSideRender from '@wordpress/server-side-render';
 
@@ -57,10 +52,6 @@ import ServerSideRender from '@wordpress/server-side-render';
  * @return {WPElement} Element to render.
  */
 export default function Edit( props ) {
-
-    useEffect(() => {
-        AOS.init();
-      }, []);
 
 	const { className, attributes, setAttributes } = props;
     const blockProps = useBlockProps();

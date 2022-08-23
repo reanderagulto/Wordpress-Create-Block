@@ -10,6 +10,20 @@
   "supports": {
     "html": false
   },
+  "attributes": {
+    "selected_theme": {
+      "type": "string",
+      "default": "default"
+    },
+    "posts_per_page": {
+      "type": "number",
+      "default": 4
+    },
+    "featured_only": {
+      "type": "boolean",
+      "default": false
+    }
+  },
   "textdomain": "aios-communities-block",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
