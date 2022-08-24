@@ -77,6 +77,20 @@ function render_listing_block( $attributes, $content, $block_instance ){
  */
 function render_communities_block( $attributes, $content, $block_instance ){
 	ob_start();
-	print_r($attributes);
+	/**
+	 * Keeping the markup to be returned in a separate file is sometimes better, especially if there is very complicated markup.
+	 * All of passed parameters are still accessible in the file.
+	 */
+	if ( isset($attributes['selected_theme']) ) {
+		switch($attributes['selected_theme']){
+			case 'element':
+				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/element/index.php';
+				break;
+			case 'classic':
+				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/classic/index.php';
+				break;
+			default:
+		}
+	}
 	return ob_get_clean();
 }

@@ -55,6 +55,15 @@ export default function Edit( props ) {
 
 	const { className, attributes, setAttributes } = props;
     const blockProps = useBlockProps();
+    const optThemeList = [
+        { label: 'Classic', value: 'classic' },
+        { label: 'Default', value: 'default' },
+    ];
+    const optViewList = [
+        { label: 'Grid', value: 'grid' },
+        { label: 'List', value: 'list' },
+        { label: 'Table', value: 'table' },
+    ];
 
     function updateSelectedTheme( val ) {
         props.setAttributes( { selected_theme: val } );
@@ -89,10 +98,7 @@ export default function Edit( props ) {
                                 name="selectedTheme"
                                 id="selectedTheme"
                                 value={ attributes.selected_theme }
-                                options={ [
-                                    { label: 'Classic', value: 'classic' },
-                                    { label: 'Default', value: 'default' },
-                                ] }
+                                options={ optThemeList }
                                 onChange={ ( val ) => updateSelectedTheme(val) }
                             />
                         </div>
@@ -109,11 +115,7 @@ export default function Edit( props ) {
                                 name="selectedView"
                                 id="selectedView"
                                 value={ attributes.selected_view }
-                                options={ [
-                                    { label: 'Grid', value: 'grid' },
-                                    { label: 'List', value: 'list' },
-                                    { label: 'Table', value: 'table' },
-                                ] }
+                                options={ optViewList }
                                 onChange={ ( val ) => updateSelectedView(val) }
                             />
                         </div>
