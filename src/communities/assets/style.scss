@@ -11,6 +11,21 @@
 	padding: 2px;
 }
 
-// Themes Stylesheets
+/*
+* Themes Stylesheets
+*/
+
+// Element
 @import '../templates/element/assets/sass/main.scss';
+
+// Classic
 @import '../templates/classic/assets/sass/main.scss';
+
+// Iconic
+@import '../templates/iconic/assets/sass/main.scss';
+
+// Legacy
+@import '../templates/legacy/assets/sass/main.scss';
+
+// Minimalist
+@import '../templates/minimalist/assets/sass/main.scss';

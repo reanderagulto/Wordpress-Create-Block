@@ -89,6 +89,15 @@ function render_communities_block( $attributes, $content, $block_instance ){
 			case 'classic':
 				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/classic/index.php';
 				break;
+			case 'iconic':
+				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/iconic/index.php';
+				break;
+			case 'legacy':
+				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/legacy/index.php';
+				break;
+			case 'minimalist':
+				require plugin_dir_path( __FILE__ ) . 'src/communities/templates/minimalist/index.php';
+				break;
 			default:
 		}
 	}

@@ -1,0 +1,418 @@
+.aios-communities-legacy {
+    position: relative;
+  
+    .term-description.entry {
+      margin-bottom: 1.2em;
+    }
+  
+    .aioscomu-list {
+      padding: 4px;
+      position: relative;
+  
+      a {
+        display: block;
+        position: relative;
+      }
+    }
+  
+    .aioscomu-photo {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      background-color: #696969;
+  
+      canvas {
+        display: block;
+        width: 100%;
+        background: var(--aios-communities-primary-color);
+        opacity: 1;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+  
+      img {
+        object-fit: cover;
+        object-position: center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        transition: all .3s ease-in-out;
+      }
+  
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: var(--aios-communities-overlay-color);
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+      }
+    }
+  
+    .aioscomu-list {
+      &:hover a .aioscomu-photo::after {
+        opacity: 0;
+      }
+  
+      &.aios-communities-show-overlay a .aioscomu-photo::after {
+        opacity: var(--aios-communties-overlay-opacity);
+      }
+    }
+  
+    .aioscomu-photo::before {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      background: var(--aios-communities-primary-color);
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      z-index: 1;
+    }
+  
+    .aioscomu-list:hover a .aioscomu-photo::before {
+      opacity: 1;
+    }
+  
+    .aioscomu-label {
+      font-weight: 600;
+      color: #fff;
+      font-size: 27px;
+      text-transform: uppercase;
+      font-weight: 300;
+      text-align: center;
+      padding: 0 20px;
+  
+      span {
+        font-weight: 600;
+      }
+    }
+  
+    .aioscomu-list.aios-communities-has-text-shadow .aioscomu-label {
+      text-shadow: 1px 2px 2px #000;
+    }
+  
+    .aioscomu-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      z-index: 4;
+    }
+  
+    .aioscomu-holder {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0 -110px;
+      font-size: 0;
+      flex-flow: row wrap;
+      margin: 0 auto !important;
+    }
+  
+    .aioscomu-col1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 49%;
+  
+      .aioscomu-list {
+        width: 50%;
+        flex: 1 2 40%;
+  
+        &:first-child {
+          width: 100%;
+          flex: 1 2 100%;
+        }
+      }
+    }
+  
+    .aioscomu-col2 {
+      width: 26.5%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+  
+      .aioscomu-list a {
+        height: 100%;
+      }
+  
+      .aioscomu-photo {
+        height: 100%;
+  
+        canvas {
+          height: 100%;
+        }
+      }
+    }
+  
+    .aioscomu-col3 {
+      width: 24.5%;
+    }
+  
+    .aioscomu-list.aioscomu-title {
+      position: relative;
+    }
+  
+    .aioscomu-title {
+      font-size: 27px;
+      text-transform: uppercase;
+      font-weight: 300;
+      color: red;
+      line-height: 1.15;
+      position: relative;
+      text-align: center;
+  
+      span {
+        display: block;
+        font-weight: 600;
+      }
+    }
+  
+    .aioscomu-title-inner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 4px;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .aioscomu-title-content {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: solid 1px #ded1c1;
+      height: 100%;
+    }
+  
+    .aioscomu-col3 .aioscomu-list {
+      height: calc(100% / 3);
+    }
+  }
+  
+  .ai-communities-pagination {
+    position: relative;
+    display: block;
+    margin: 50px 0;
+    width: 100%;
+  
+    ul {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: row wrap;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        position: relative;
+        display: block;
+        margin: 15px 0;
+        padding: 0 30px;
+      }
+    }
+  
+    .aios-communitiesNext, .aios-communitiesPrev {
+      padding: 0;
+    }
+  
+    ul li {
+      + li {
+        border-left: 1px solid #898989;
+      }
+  
+      &.aios-communitiesNext, &.aios-communitiesPrev + li {
+        border: none;
+      }
+  
+      a, span {
+        position: relative;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .05em;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        outline: 0;
+        color: #898989;
+        transition: all .4s ease-in-out;
+      }
+  
+      a {
+        &.active, &:hover {
+          color: var(--aios-communities-primary-color, #bfb183);
+        }
+      }
+  
+      &.aios-communitiesNext a:first-child + a, &.aios-communitiesPrev a:first-child + a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s ease-in-out;
+        width: 46px;
+        height: 44px;
+        color: #898989;
+      }
+  
+      &.aios-communitiesNext a:first-child, &.aios-communitiesPrev a:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: block;
+      }
+  
+      &.aios-communitiesNext a {
+        &.active, &:hover {
+          color: var(--aios-communities-primary-color, #bfb183);
+        }
+      }
+  
+      &.aios-communitiesPrev a {
+        &.active, &:hover {
+          color: var(--aios-communities-primary-color, #bfb183);
+        }
+      }
+  
+      &.aios-communitiesNext a i, &.aios-communitiesPrev a i {
+        font-style: inherit;
+        font-weight: 700;
+        color: inherit;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) {
+    .aios-communities-legacy {
+      .aioscomu-label {
+        font-size: 20px;
+      }
+  
+      .aioscomu-title {
+        font-size: 22px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .aios-communities-legacy {
+      .aioscomu-holder {
+        margin: 0 0;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+  
+      .aioscomu-col1, .aioscomu-col2 {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+      }
+  
+      .aioscomu-col1 .aioscomu-list {
+        width: 100%;
+      }
+  
+      .aioscomu-col3 {
+        width: 100%;
+  
+        .aioscomu-list {
+          width: 100%;
+          height: auto;
+        }
+  
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+      }
+  
+      .aioscomu-list.aioscomu-title-holder .aioscomu-photo {
+        display: none;
+      }
+  
+      .aioscomu-title-inner {
+        position: relative;
+      }
+  
+      .aioscomu-title-content {
+        padding: 30px 15px;
+      }
+  
+      .aioscomu-photo canvas {
+        height: 250px !important;
+      }
+  
+      .aioscomu-label {
+        font-size: 24px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .aios-communities-legacy .aioscomu-photo canvas {
+      height: 200px !important;
+    }
+  }
