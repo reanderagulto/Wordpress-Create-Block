@@ -52,10 +52,12 @@ import ServerSideRender from '@wordpress/server-side-render';
 export default function Edit( props ) {
 
 	const { className, attributes, setAttributes } = props; 
+    
 	const blockProps = useBlockProps();
+
 	const themeList = [
-		{ label: 'Classic',    value: 'classic' },
 		{ label: 'Element',    value: 'element' },
+        { label: 'Classic',    value: 'classic' },
 		{ label: 'Iconic',     value: 'iconic' },
 		{ label: 'Legacy', 	   value: 'legacy' },
 		{ label: 'Minimalist', value: 'minimalist' },

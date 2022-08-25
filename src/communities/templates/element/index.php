@@ -68,6 +68,10 @@ $aios_metaboxes_banner_title_layout = get_option( 'aios-metaboxes-banner-title-l
         </div>
     </section>
 <?php else : ?>
-
+    
 <?php endif ?>
+
+<script>
+  AOS.init();
+</script>
 

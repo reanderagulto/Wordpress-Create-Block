@@ -40,6 +40,7 @@
   
       .col-md-6 {
         float: none;
+        width: 50%;
   
         &:nth-child(2) {
           margin: auto 0;
@@ -151,7 +152,7 @@
   }
   
   .bootstrap-extend-left {
-    margin-left: calc((100vw - 1140px)/ -2);
+    
   }
   
   .bootstrap-extend-right {
