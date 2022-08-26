@@ -104,12 +104,11 @@
   .ai-communities-minimalist-row {
     display: flex;
     flex-flow: row wrap;
-    padding: 0 6.25%;
     margin-top: 30px;
   
     .ai-communities-minimalist-list {
       width: calc( 100% / 2);
-      flex-shrink: 0;
+      flex: 1 0 40%;
       padding: 1.56%;
   
       a {
