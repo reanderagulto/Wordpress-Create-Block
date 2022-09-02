@@ -21,6 +21,15 @@
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_aios_gutenberg_block_init() {
+
+	/*
+	* Register AIOS Block Pattern Category
+	*/
+	register_block_pattern_category(
+		'agent-image',
+		array( 'label' => __( 'Agent Image', 'aios-gutenberg' ) )
+	);
+
 	/*
 	* Register AIOS Communities Block
 	*/
@@ -38,6 +47,37 @@ function create_block_aios_gutenberg_block_init() {
 			'render_callback' 	=> 'render_listing_block'
 		)
 	);
+
+	/*
+	* Register AIOS Listing Pattern
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-listings-template',
+		array(
+			'title'      => __( 'AIOS Gutenberg', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-listing-block' ),
+			'content'    => '<!-- wp:group -->
+							<div class="wp-block-group">
+								<!-- wp:group -->
+								<div class="wp-block-group">
+									<!-- wp:heading {"fontSize":"large"} -->
+									<h2 class="has-large-font-size">
+										<span style="color:#ba0c49" class="has-inline-color">Hi everyone</span>
+									</h2>
+									<!-- /wp:heading -->
+									<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+									<p class="has-white-color has-black-background-color has-text-color has-background">
+										Powered by WordPress
+									</p>
+									<!-- /wp:paragraph -->
+								</div>
+								<!-- /wp:group -->
+							</div>
+							<!-- /wp:group -->',
+		)
+	);
+
+
 }
 add_action( 'init', 'create_block_aios_gutenberg_block_init' );
 
