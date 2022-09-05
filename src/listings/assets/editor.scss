@@ -112,10 +112,6 @@
 	border: 1px solid #555;
   }
 
-
-  @import '../templates/classic/assets/sass/main.scss';
-  @import '../templates/default/assets/sass/main.scss';
-
   /**
  * Classic Theme for Editor: 
  *
@@ -130,4 +126,34 @@
  }
  .ai-classic-properties-content-grid-address div{
     justify-content: flex-start;
+	font-size: 0.813vw;
  }
+
+ .ai-classic-properties-content-grid-address div:last-of-type {
+    font-size: 0.75vw;
+}
+
+ .ai-classic-properties-content-grid-price {
+    font-size: 2vw;
+    position: relative;
+}
+
+#listings-results .listings-table .listings-table-header>div{
+	padding: 10px;
+}
+
+#listings-results .listings-table .listings-table-body .listings-plan, #listings-results .listings-table .listings-table-body .listings-price{
+	width: 7.25%;
+}
+
+#listings-results .listings-table .listings-table-header .header-baths, #listings-results .listings-table .listings-table-header .header-beds, #listings-results .listings-table .listings-table-header .header-lot, #listings-results .listings-table .listings-table-header .header-price{
+	width: 8.25%;
+}
+
+#listings-results .listings-table .listings-table-header .header-address{
+	width: 20%;
+}
+
+#listings-results .listings-table .listings-table-body .listings-address{
+    width: 17%;
+}

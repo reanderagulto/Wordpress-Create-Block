@@ -120,14 +120,14 @@
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-size: 32px;
+      font-size: 2vw;
       -webkit-animation: rotating 2s linear infinite;
       animation: rotating 2s linear infinite;
       color: #6b6a6a;
     }
   
     &.loader-lg:before {
-      font-size: 64px;
+      font-size: 4vw;
     }
   }
   
@@ -185,7 +185,7 @@
   .ai-classic-properties-title .entry-title {
     font-family: inherit;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 3.438vw;
     letter-spacing: 0.02em;
     color: #222222;
     text-transform: uppercase;
@@ -227,7 +227,7 @@
     outline: 0;
     background-color: transparent;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 0.875vw;
     text-transform: uppercase;
     text-align: left;
     border-bottom: solid 1px #c1b283;
@@ -256,7 +256,7 @@
     background-color: #f5f4f4;
     padding: 20px 10px;
     min-width: 180px;
-    font-size: 15px;
+    font-size: 0.938vw;
     text-transform: uppercase;
   }
   
@@ -356,7 +356,7 @@
   
       em {
         font-style: normal !important;
-        font-size: 18px;
+        font-size: 1.125vw;
       }
   
       &.active {
@@ -371,7 +371,7 @@
     margin-right: 6px;
     min-width: 178px;
     padding: 15px 30px;
-    font-size: 14px;
+    font-size: 0.875vw;
     color: #222222;
     text-transform: uppercase;
     text-align: center;
@@ -498,7 +498,7 @@
   
   .ai-classic-properties-content-grid-price {
     position: relative;
-    font-size: 42px;
+    font-size: 2.625vw;
   
     &::before {
       content: '';
@@ -515,14 +515,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 21px;
+    font-size: 1.313vw;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     line-height: 1.3;
   
     &:last-of-type {
       color: #c1b283;
-      font-size: 18px;
+      font-size: 1.125vw;
     }
   
     span {
@@ -557,7 +557,7 @@
   }
   
   .ai-classic-properties-content-list-address {
-    font-size: 25px;
+    font-size: 1.125vw;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     line-height: 1.2;
@@ -572,13 +572,13 @@
   
   .ai-classic-properties-content-list-price {
     margin-top: 18px;
-    font-size: 42px;
+    font-size: 2.625vw;
   }
   
   .ai-classic-properties-content-list-features {
     display: flex;
     margin-top: 27px;
-    font-size: 14px;
+    font-size: 0.875vw;
     text-transform: uppercase;
     letter-spacing: 0.07em;
   
@@ -604,7 +604,7 @@
     margin-top: 27px;
     display: block;
     width: 143px;
-    font-size: 15px;
+    font-size: 0.938vw;
     letter-spacing: 0.1em;
     padding: 13px;
     color: #FFFFFF !important;
@@ -639,7 +639,7 @@
   }
   
   div[class*="ai-classic-properties-content-table-data"] {
-    font-size: 15px;
+    font-size: 0.938vw;
     text-transform: uppercase;
     padding: 19px 0 19px 29px;
   }
@@ -699,7 +699,7 @@
     }
   
     .page-numbers {
-      font-size: 15px;
+      font-size: 0.938vw;
       padding: 0 10px;
       margin: 0 5px;
   
@@ -727,12 +727,12 @@
   
     .prev.page-numbers::before {
       content: "\b0001";
-      font-size: 16px;
+      font-size: 1vw;
     }
   
     .next.page-numbers::before {
       content: "\b0002";
-      font-size: 16px;
+      font-size: 1vw;
     }
   
     .prev.page-numbers:hover, .next.page-numbers:hover {
@@ -747,7 +747,7 @@
     }
   
     .ai-classic-properties-content-grid-price {
-      font-size: 28px;
+      font-size: 1.75vw;
     }
   }
   
@@ -766,7 +766,7 @@
       }
   
       .ai-classic-properties-search-button {
-        font-size: 16px;
+        font-size: 1vw;
       }
     }
   
@@ -779,10 +779,10 @@
     }
   
     .ai-classic-properties-content-grid-address div {
-      font-size: 18px;
+      font-size: 1.125vw;
   
       &:last-of-type {
-        font-size: 16px;
+        font-size: 1vw;
       }
     }
   
@@ -805,7 +805,7 @@
     }
   
     .ai-classic-properties-search-button {
-      font-size: 16px;
+      font-size: 1vw;
     }
   
     /**

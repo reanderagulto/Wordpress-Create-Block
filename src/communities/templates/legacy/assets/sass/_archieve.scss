@@ -95,7 +95,7 @@
     .aioscomu-label {
       font-weight: 600;
       color: #fff;
-      font-size: 27px;
+      font-size: 1.688vw;
       text-transform: uppercase;
       font-weight: 300;
       text-align: center;
@@ -192,7 +192,7 @@
     }
   
     .aioscomu-title {
-      font-size: 27px;
+      font-size: 1.688vw;
       text-transform: uppercase;
       font-weight: 300;
       color: red;
@@ -276,7 +276,7 @@
       a, span {
         position: relative;
         display: block;
-        font-size: 14px;
+        font-size: 0.875vw;
         font-weight: 600;
         letter-spacing: .05em;
         line-height: 1;
@@ -336,11 +336,11 @@
   @media only screen and (max-width: 1199px) {
     .aios-communities-legacy {
       .aioscomu-label {
-        font-size: 20px;
+        font-size: 1.25vw;
       }
   
       .aioscomu-title {
-        font-size: 22px;
+        font-size: 1.375vw;
       }
     }
   }
@@ -406,7 +406,7 @@
       }
   
       .aioscomu-label {
-        font-size: 24px;
+        font-size: 1.5vw;
       }
     }
   }

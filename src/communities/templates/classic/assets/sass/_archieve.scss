@@ -36,7 +36,7 @@
     .entry-title {
       font-family: inherit;
       font-weight: 400;
-      font-size: 55px;
+      font-size: 3.438vw;
       letter-spacing: 0.02em;
       color: #222222;
       text-transform: uppercase;
@@ -49,7 +49,7 @@
   }
   
   .ai-classic-communities-search {
-    font-size: 16px;
+    font-size: 1vw;
     text-transform: uppercase;
     color: #6a6a6a;
     margin-top: 48px;
@@ -60,7 +60,7 @@
       outline: 0;
       padding: 0;
       color: #5e5e5e;
-      font-size: 16px;
+      font-size: 1vw;
     }
   }
   
@@ -75,7 +75,7 @@
       height: 37px;
       padding: 0 40px 0 12px;
       margin-left: 25px;
-      font-size: 16px;
+      font-size: 1vw;
     }
   
     button {
@@ -89,7 +89,7 @@
       height: 38px;
   
       &::before {
-        font-size: 16px;
+        font-size: 1vw;
         color: #c1c1c1;
       }
     }
@@ -215,7 +215,7 @@
   
   .ai-classic-communities-content-grid-price {
     position: relative;
-    font-size: 42px;
+    font-size: 2.625vw;
     text-align: center;
   }
   
@@ -300,13 +300,13 @@
   
     .prev.page-numbers::before {
       content: "\b0001";
-      font-size: 21px;
+      font-size: 1.313vw;
       font-weight: 700;
     }
   
     .next.page-numbers::before {
       content: "\b0002";
-      font-size: 21px;
+      font-size: 1.313vw;
       font-weight: 700;
     }
   
@@ -322,7 +322,7 @@
   
   .aios-no-communities-found {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5vw;
     width: 100%;
   }
   
@@ -332,13 +332,13 @@
     }
   
     .ai-classic-communities-content-grid-price {
-      font-size: 32px;
+      font-size: 2vw;
     }
   }
   
   @media only screen and (max-width: 991px) {
     .ai-classic-communities-title .entry-title {
-      font-size: 36px;
+      font-size: 2.25vw;
     }
   
     .ai-classic-communities-search {

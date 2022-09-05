@@ -114,14 +114,14 @@
       line-height: 1;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-      font-size: 32px;
+      font-size: 2vw;
       -webkit-animation: rotating 2s linear infinite;
       animation: rotating 2s linear infinite;
       color: #6b6a6a;
     }
   
     &.loader-lg:before {
-      font-size: 64px;
+      font-size: 4vw;
     }
   }
   
@@ -227,7 +227,7 @@
   
         i {
           display: block;
-          font-size: 18px;
+          font-size: 1.125vw;
           font-weight: 400;
           font-style: normal;
           cursor: pointer;
@@ -253,7 +253,7 @@
         background: transparent;
         display: block;
         position: relative;
-        font-size: 15px;
+        font-size: 0.938vw;
         font-weight: 400;
         line-height: 1;
         letter-spacing: 0.34px;
@@ -303,7 +303,7 @@
   
         label {
           display: block;
-          font-size: 15px;
+          font-size: 0.938vw;
           font-weight: 400;
           line-height: 1;
           letter-spacing: .34px;
@@ -344,7 +344,7 @@
           box-shadow: none;
           text-align: left;
           padding: 0 10px;
-          font-size: 13px;
+          font-size: 0.813vw;
           font-weight: 400;
           line-height: 1;
           position: relative;
@@ -361,7 +361,7 @@
           width: 100%;
           height: 40px;
           margin-top: 10px;
-          font-size: 18px;
+          font-size: 1.125vw;
           font-weight: 400;
           text-transform: uppercase;
           letter-spacing: 0.34px;
@@ -390,7 +390,7 @@
           a {
             display: block;
             padding: 5px 15px;
-            font-size: 15px;
+            font-size: 0.938vw;
             font-weight: 400;
             line-height: 1;
             letter-spacing: 0.34px;
@@ -493,7 +493,7 @@
       }
   
       .listings-address {
-        font-size: 25px;
+        font-size: 1.563vw;
         font-weight: 300;
         line-height: 1;
         text-transform: uppercase;
@@ -506,7 +506,7 @@
       }
   
       .listings-price {
-        font-size: 30px;
+        font-size: 1.875vw;
         font-weight: 400;
         line-height: 1;
         margin-top: 30px;
@@ -526,7 +526,7 @@
         span {
           display: block;
           position: relative;
-          font-size: 16px;
+          font-size: 1vw;
           font-weight: 300;
           line-height: 1;
   
@@ -536,7 +536,7 @@
   
           i {
             font-style: normal;
-            font-size: 14px;
+            font-size: 0.875vw;
             margin-right: 5px;
           }
         }
@@ -552,7 +552,7 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        font-size: 18px;
+        font-size: 1.125vw;
         font-weight: 400;
         line-height: 1;
         text-transform: uppercase;
@@ -614,7 +614,7 @@
   
       span {
         display: inline-block;
-        font-size: 14px;
+        font-size: 0.875vw;
         text-transform: uppercase;
         padding: 5px;
         letter-spacing: 0.1em;
@@ -691,7 +691,7 @@
       }
   
       .listings-address {
-        font-size: 25px;
+        font-size: 1.563vw;
         font-weight: 300;
         line-height: 1;
         text-transform: uppercase;
@@ -699,14 +699,14 @@
   
         span {
           display: block;
-          font-size: 20px;
+          font-size: 1.25vw;
           color: #fff;
           margin-top: 8px;
         }
       }
   
       .listings-price {
-        font-size: 30px;
+        font-size: 1.875vw;
         font-weight: 400;
         line-height: 1;
         color: #fff;
@@ -745,7 +745,7 @@
         display: block;
         position: relative;
         text-align: center;
-        font-size: 16px;
+        font-size: 1vw;
         font-weight: 300;
         line-height: 1;
         color: #fff;
@@ -789,7 +789,7 @@
         border-bottom: 1px solid #eaeaea;
   
         > div {
-          font-size: 15px;
+          font-size: 0.938vw;
           font-weight: 500;
           line-height: 1;
           text-transform: uppercase;
@@ -835,7 +835,7 @@
   
           > div {
             padding: 0 15px;
-            font-size: 16px;
+            font-size: 1vw;
             font-weight: 400;
           }
         }
@@ -896,7 +896,7 @@
         -ms-flex-align: center;
         align-items: center;
         outline: none;
-        font-size: 14px;
+        font-size: 0.875vw;
         font-weight: 400;
         line-height: 1;
         color: var(--aios-listing-primary-color);
@@ -944,7 +944,7 @@
     padding: 100px 0;
   
     h2 {
-      font-size: 40px;
+      font-size: 2.5vw;
       text-align: center;
     }
   }
@@ -1004,15 +1004,15 @@
         }
   
         .listings-address {
-          font-size: 20px;
+          font-size: 1.25vw;
         }
   
         .listings-item .listings-price {
-          font-size: 25px;
+          font-size: 1.563vw;
         }
   
         .listings-plan span {
-          font-size: 15px;
+          font-size: 0.938vw;
         }
       }
   
@@ -1069,7 +1069,7 @@
   
       .listings-sort {
         .sort-dropdown button {
-          font-size: 13px;
+          font-size: 0.813vw;
         }
   
         > div {

@@ -9,7 +9,7 @@
       align-items: center;
   
       label {
-        font-size: 16px;
+        font-size: 1vw;
         color: var(--aios-communities-primary-color);
         letter-spacing: 0.05em;
         display: block;
@@ -27,7 +27,7 @@
           height: 37px;
           border: 1px solid var(--aios-communities-primary-color);
           color: var(--aios-communities-primary-color);
-          font-size: 16px;
+          font-size: 1vw;
           padding: 10px;
         }
   
@@ -54,7 +54,7 @@
   
           button {
             color: var(--aios-communities-primary-color);
-            font-size: 16px;
+            font-size: 1vw;
             display: block;
             border: none;
             background: transparent;
@@ -75,7 +75,7 @@
   
       label {
         color: var(--aios-communities-primary-color);
-        font-size: 16px;
+        font-size: 1vw;
         text-transform: uppercase;
   
         &:after {
@@ -91,7 +91,7 @@
       }
   
       select {
-        font-size: 16px;
+        font-size: 1vw;
         color: #5e5e5e;
         text-transform: uppercase;
         margin-left: 22px;
@@ -175,7 +175,7 @@
   
         .ai-communities-minimalist-content h2 {
           color: #ffffff;
-          font-size: 28px;
+          font-size: 1.75vw;
           text-align: center;
           text-transform: uppercase;
         }
@@ -186,7 +186,7 @@
   
         .ai-communities-minimalist-content p {
           color: #ffffff;
-          font-size: 15px;
+          font-size: 0.938vw;
           text-align: center;
           font-weight: 300;
           text-transform: uppercase;
@@ -214,7 +214,7 @@
   
         .ai-communities-minimalist-content-hover h2 {
           color: #ffffff;
-          font-size: 28px;
+          font-size: 1.75vw;
           text-align: center;
           text-transform: uppercase;
         }
@@ -225,7 +225,7 @@
   
         .ai-communities-minimalist-content-hover p {
           color: #ffffff;
-          font-size: 15px;
+          font-size: 0.938vw;
           text-align: center;
           font-weight: 300;
           text-transform: uppercase;
@@ -251,7 +251,7 @@
     }
   
     .page-numbers {
-      font-size: 15px;
+      font-size: 0.938vw;
       padding: 0 23px;
       margin: 0;
       border-left: 1px solid var(--aios-communities-primary-color);
@@ -287,13 +287,13 @@
   
     .prev.page-numbers::before {
       content: "\b0001";
-      font-size: 21px;
+      font-size: 1.313vw;
       font-weight: 700;
     }
   
     .next.page-numbers::before {
       content: "\b0002";
-      font-size: 21px;
+      font-size: 1.313vw;
       font-weight: 700;
     }
   
@@ -309,7 +309,7 @@
   
   .aios-no-communities-found {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5vw;
     width: 100%;
   }
   
