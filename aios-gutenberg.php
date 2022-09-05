@@ -49,30 +49,102 @@ function create_block_aios_gutenberg_block_init() {
 	);
 
 	/*
-	* Register AIOS Listing Pattern
+	* Register AIOS Listing Pattern 1
 	*/
 	register_block_pattern(
-		'aios-gutenberg/aios-listings-template',
+		'aios-gutenberg/aios-listings-template-default-grid',
 		array(
-			'title'      => __( 'AIOS Gutenberg Listings Template 1', 'aios-gutenberg' ),
+			'title'      => __( 'AIOS Gutenberg Listings Default Grid', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-listing-block' ),
+			'content'    => '<!-- wp:group -->
+								<div class="wp-block-group">
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">Featured Listings</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-listing-block /-->	
+										</div>
+									<!-- /wp:group -->
+								</div>
+							<!-- /wp:group -->',
+		)
+	);
+
+		/*
+	* Register AIOS Listing Pattern 2
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-listings-classic-grid',
+		array(
+			'title'      => __( 'AIOS Listings Classic Grid', 'aios-gutenberg' ),
 			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-listing-block' ),
 			'content'    => '<!-- wp:group -->
 							<div class="wp-block-group">
 								<!-- wp:group -->
 								<div class="wp-block-group">
-									<!-- wp:heading {"fontSize":"large"} -->
-									<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">Featured Listings</span></h2>
-									<!-- /wp:heading -->
-									<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
-									<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
-									<!-- /wp:paragraph -->
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:heading {"fontSize":"large"} -->
+										<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">Featured Listings</span></h2>
+										<!-- /wp:heading -->
+										<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+										<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+										<!-- /wp:paragraph -->
+									</div>
+									<!-- /wp:group -->
 								</div>
 								<!-- /wp:group -->
+								<!-- wp:group --> 
+									<div class="wp-block-group">
+									<!-- wp:create-block/aios-listing-block { "selected_theme": "classic" } /-->	
+									</div>
+								<!-- /wp:group -->
 							</div>
-							<!-- /wp:group -->
-							<!-- wp:group --> 
+							<!-- /wp:group -->',
+		)
+	);
+
+	/*
+	* Register AIOS Communities Pattern
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-communities-element',
+		array(
+			'title'      => __( 'AIOS Communities Element', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-communities-block' ),
+			'content'    => '<!-- wp:group -->
 								<div class="wp-block-group">
-								<!-- wp:create-block/aios-listing-block /-->	
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-communities-block /-->	
+										</div>
+									<!-- /wp:group -->
 								</div>
 							<!-- /wp:group -->',
 		)
@@ -82,27 +154,134 @@ function create_block_aios_gutenberg_block_init() {
 	* Register AIOS Communities Pattern
 	*/
 	register_block_pattern(
-		'aios-gutenberg/aios-communities-template',
+		'aios-gutenberg/aios-communities-classic',
 		array(
-			'title'      => __( 'AIOS Gutenberg Communities Template 1', 'aios-gutenberg' ),
+			'title'      => __( 'AIOS Communities Classic', 'aios-gutenberg' ),
 			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-communities-block' ),
 			'content'    => '<!-- wp:group -->
-							<div class="wp-block-group">
-								<!-- wp:group -->
 								<div class="wp-block-group">
-									<!-- wp:heading {"fontSize":"large"} -->
-									<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
-									<!-- /wp:heading -->
-									<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
-									<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
-									<!-- /wp:paragraph -->
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-communities-block { "selected_theme": "classic" } /-->	
+										</div>
+									<!-- /wp:group -->
 								</div>
-								<!-- /wp:group -->
-							</div>
-							<!-- /wp:group -->
-							<!-- wp:group --> 
+							<!-- /wp:group -->',
+		)
+	);
+
+	
+	/*
+	* Register AIOS Communities Pattern
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-communities-iconic',
+		array(
+			'title'      => __( 'AIOS Communities Iconic', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-communities-block' ),
+			'content'    => '<!-- wp:group -->
 								<div class="wp-block-group">
-								<!-- wp:create-block/aios-communities-block /-->	
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-communities-block { "selected_theme": "iconic", "no_shown": 6 } /-->	
+										</div>
+									<!-- /wp:group -->
+								</div>
+							<!-- /wp:group -->',
+		)
+	);
+
+	/*
+	* Register AIOS Communities Pattern
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-communities-legacy',
+		array(
+			'title'      => __( 'AIOS Communities Legacy', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-communities-block' ),
+			'content'    => '<!-- wp:group -->
+								<div class="wp-block-group">
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-communities-block { "selected_theme": "legacy", "no_shown": 7 } /-->	
+										</div>
+									<!-- /wp:group -->
+								</div>
+							<!-- /wp:group -->',
+		)
+	);
+
+	/*
+	* Register AIOS Communities Pattern
+	*/
+	register_block_pattern(
+		'aios-gutenberg/aios-communities-minimalist',
+		array(
+			'title'      => __( 'AIOS Communities Minimalist', 'aios-gutenberg' ),
+			'blockTypes' => array( 'core/paragraph', 'core/heading', 'create-block/aios-communities-block' ),
+			'content'    => '<!-- wp:group -->
+								<div class="wp-block-group">
+									<!-- wp:group -->
+									<div class="wp-block-group">
+										<!-- wp:group -->
+										<div class="wp-block-group">
+											<!-- wp:heading {"fontSize":"large"} -->
+											<h2 class="has-large-font-size"><span style="color:#ba0c49" class="has-inline-color">My Communities</span></h2>
+											<!-- /wp:heading -->
+											<!-- wp:paragraph {"backgroundColor":"black","textColor":"white"} -->
+											<p class="has-white-color has-black-background-color has-text-color has-background">Powered by Agent Image</p>
+											<!-- /wp:paragraph -->
+										</div>
+										<!-- /wp:group -->
+									</div>
+									<!-- /wp:group -->
+									<!-- wp:group --> 
+										<div class="wp-block-group">
+										<!-- wp:create-block/aios-communities-block { "selected_theme": "minimalist" } /-->	
+										</div>
+									<!-- /wp:group -->
 								</div>
 							<!-- /wp:group -->',
 		)
